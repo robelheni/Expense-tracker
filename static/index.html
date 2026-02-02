@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    <header> <h1> Expense Tracker</h1></header>
+
+    <main>
+        <div class = "total-card">
+            <h2>Total spending</h2>
+            <p class = "total-amount" id="totalAmount">$0.00</p>
+        </div>
+
+        <div class ="card">
+            <h3>Add New Expenses</h3>
+            <form id = "expenseForm">
+                <div class = "form-group">
+                    <label for = "description">Description</label>
+                    <input type ="text" id = "description" required>
+                </div>
+                <div class = "form-group">
+                    <label for = "amount">Amount</label>
+                    <input type ="number" id = "amount" step="0.01" required>
+                </div>
+                <button type ="submit">Add Expense</button>
+
+            </form>
+        </div>
+
+        <div class = "card">
+            <h3>Your Expenses</h3>
+            <div id ="expensesList">
+
+            </div>
+        </div>
+        <script src ="script.js">
+
+        </script>
+    </main>
+</body>
+</html>

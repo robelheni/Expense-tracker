@@ -7,7 +7,7 @@ import os
 from dotenv import load_dotenv
 
 #loadd envt varaiables from .env files
-load dotenv()
+load_dotenv()
 
 #database conncetion URL- tells pyton where to find your database
 
